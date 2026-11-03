@@ -132,9 +132,8 @@ Never use the `service_role` or secret key in these variables.
 | T7 | Change status to In Progress, then Closed | Status badge and dashboard counts update | Pass |
 | T8 | Add a comment | Comment appears with author and time | Pass |
 | T9 | Assigned user logs in | Issue appears under "Assigned to me" and the dashboard count is correct | Pass |
-| T10 | Normal user opens the Users page | Link is hidden and direct access shows "Only admins can view this page" | Pass |
-| T11 | Admin deletes an issue | Issue and its comments are removed and counts drop | Pass |
-| T12 | Search and filter the issue list | Only matching issues are shown | Pass |
+| T10 | Admin deletes an issue | Issue and its comments are removed and counts drop | Pass |
+| T11 | Search and filter the issue list | Only matching issues are shown | Pass |
 
 **Acceptance criteria:** all functional requirements FR1 to FR12 work on the live URL, an admin and a user can complete the full flow (register, create, assign, comment, close), and the documentation is enough for another developer to run and deploy the project.
 
