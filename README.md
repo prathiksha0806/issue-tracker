@@ -2,9 +2,9 @@
 
 A web app to create, assign, discuss and track issues. Users register and log in; admins manage everything.
 
-**Live URL:** https://YOUR-APP.vercel.app  *(replace after deploying)*
-**Repository:** https://github.com/YOUR-USERNAME/issue-tracker
-**Demo admin:** admin@example.com / YourPassword *(replace with the account you create)*
+- **Live URL:** https://issue-tracker-virid-eight.vercel.app
+- **Repository:** https://github.com/prathiksha0806/issue-tracker
+- **Demo admin:** demoadmin@test.com / Admin@12345
 
 ## Features
 - User registration and login (Supabase Auth, email + password)
@@ -32,7 +32,7 @@ Next.js 14, React 18, JavaScript, plain CSS, Supabase (Auth + Postgres), Vercel.
 1. Clone the repo and run `npm install`.
 2. Create a free project at https://supabase.com.
 3. In Supabase open **SQL Editor**, paste the contents of `supabase/schema.sql`, and run it.
-4. In Supabase go to **Authentication > Providers > Email** and turn off **Confirm email** (so sign-up logs in instantly).
+4. In Supabase go to **Authentication > Sign In / Providers**, and turn off **Confirm email** in the User Signups box (so sign-up logs in instantly).
 5. Copy `.env.example` to `.env.local` and fill in the values (see below).
 6. Run `npm run dev` and open http://localhost:3000.
 7. Register an account, then make it admin in the SQL Editor:
@@ -43,6 +43,10 @@ Next.js 14, React 18, JavaScript, plain CSS, Supabase (Auth + Postgres), Vercel.
 |---|---|
 | `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL (Project Settings > API) |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anon public key (same page). Safe to expose; RLS protects data. |
+| In newer Supabase dashboards the anon key is called the "publishable key". Use that value for `NEXT_PUBLIC_SUPABASE_ANON_KEY`.
+
+
+
 
 ## Data model
 - `profiles` (id, email, full_name, role `user|admin`), created automatically on sign-up

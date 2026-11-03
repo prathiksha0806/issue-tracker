@@ -31,7 +31,7 @@ In scope: authentication, issue management, assignment, status tracking, comment
 - **Maintainability:** no custom server; schema in one SQL file.
 
 ## 6. Deployment
-**Hosting:** Frontend on Vercel (https://YOUR-APP.vercel.app). Auth and database on Supabase (free tier).
+**Hosting:** Frontend on Vercel (https://issue-tracker-virid-eight.vercel.app). Auth and database on Supabase (free tier).
 
 **Approach:** The GitHub repository is connected to Vercel. Every push to `main` builds and deploys automatically. The database is created once from `supabase/schema.sql`.
 
